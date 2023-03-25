@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "nitayneeman.playwright-snippets",
+    "alexkrechik.cucumberautocomplete",
+    "ms-playwright.playwright"
+  ]
+}
