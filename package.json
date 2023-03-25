@@ -1,0 +1,42 @@
+{
+  "name": "pw.ts.cuke",
+  "version": "1.0.0",
+  "description": "template framework with Playwright using TypeScript and Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cucumber-js -p test_runner --tags  @Smoke & node ./html-report-generator.js",
+    "test:dev": "env-cmd --verbose -e dev npm test",
+    "test:staging": "env-cmd --verbose -e staging npm test",
+    "test:env:browser": "env-cmd --verbose -e",
+    "lint": "eslint . --ext .ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:cosminCirstea/pw.ts.cuke.git"
+  },
+  "keywords": [
+    "template",
+    "Playwright",
+    "TypeScript",
+    "Cucumber"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cucumber/cucumber": "^9.0.1",
+    "cucumber-html-reporter": "^6.0.0",
+    "dotenv": "^16.0.3",
+    "env-cmd": "^10.1.0",
+    "playwright": "^1.32.1",
+    "prettier": "^2.8.7",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.32.1",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "eslint": "^8.36.0"
+  }
+}

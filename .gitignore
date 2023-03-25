@@ -1,0 +1,10 @@
+node_modules/
+/screenshots
+/reports
+/.idea
+/tests
+/test-results/
+/playwright-report/
+/playwright/.cache/
+.github
+tests-examples
